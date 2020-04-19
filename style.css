@@ -53,11 +53,11 @@ a {
 }
 
 .widebody {
-    width: 800px;
+    width: 1000px;
     padding: 0px 30px 30px 30px;
 }
 
-.widebody h1,h2,h3,h4 {
+.widebody h1,h2,h3 {
     padding-top:40px;
 }
 
