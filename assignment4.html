@@ -30,7 +30,7 @@
                  <img src="A4/swimmingcroc.png" height=300>
                </p>
                
-               <p>Then, I wanted to continue using the alligator mesh but this time I decided to give it a party hat. So I created a party hat in rhino, and imported the alligator STL from thingiverse. After placing the hat on the alligator's head, I used MeshBooleanUnion to join the two separate meshes. Then I used Repair to correct the issues after the union. There was still naked edges in one of the alligator toes somehow, and I messed around a bit trying to fix it and eventually resolved it by deleting some offending points and edges and then filled the hole.</p>
+               <p>Then, I wanted to continue using the alligator mesh but this time I decided to give it a party hat. So I created a STL for a party hat in rhino, and imported the alligator STL from thingiverse. After placing the hat on the alligator's head, I used MeshBooleanUnion to join the two separate meshes. Then I used Repair to correct the issues after the union. There was still naked edges in one of the alligator toes somehow, and I messed around a bit trying to fix it and eventually resolved it by deleting some offending points and edges and then filled the hole.</p>
                
                <p>
                  <img src="A4/partyhatoncrocrhino.png" height=350>
@@ -81,6 +81,10 @@
                     <img src="A4/doily.JPG" height=350>
                     <img src="A4/pattern.png" height=350>
                 </p>
+                
+                <p>I did a test print of the pattern to see how it interacts with the light. One version I put a thin (1.5mm) layer of material behind the pattern to see if any light was able to shine through, but it didn't work out so well, I think because I only have black PLA.</p>
+                
+                <p><img src="A4/testPattern.png" height=350></p>
                 
                 <p>I then extracted the curves in Illustrator, imported into Rhino, extruded and repeated the pattern onto a rectangular plane. I got the size of the rectangle with the command CreateUVCurve, which apparently projects the lamp curve onto the xy plane. Then I used FlowAlongSrf to put the surface in the shape of my lampshade curve.</p>
                 
