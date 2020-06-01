@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
-
-        <title>A1: Modelling Cookie Cutters</title>
-
+        <title>A1: Modelling Cookie Cutters in Rhino</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css"/>
     </head>
+    
     <body>
-
-        <div class="header">
-            <h1>Assignment 1</h1>
-            <h2>Modelling Cookie Cutters in Rhino</h2>
+        
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-right">
+                    <a class="navbar-brand" href="index.html"><img src="logo.png" width="36"></a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container-fluid">
+            <h1>Assignment 1: Modelling Cookie Cutters in Rhino</h1>
             <p>For this assignment, I was tasked to use images from photographs to create models of cookie cutters using Rhino.</p>
         </div>
-        <div class="widebody">
-            <h3>Step 1: Choose Images</h3>
+        
+        <div class="container-fluid">
+            <h2>Step 1: Choose Images</h2>
             <p>I started with three images.</p>
             <p>
                 <a href="https://unsplash.com/photos/4aJ9GCwB3Gw"><img src="A1/alex-furgiuele-UkH7L-aag8A-unsplash.jpg" height=200></a>
@@ -25,21 +35,23 @@
                 <a href="https://unsplash.com/photos/UkH7L-aag8A"><img src="A1/jorge-garcia-4aJ9GCwB3Gw-unsplash.jpg" height=200></a>
             </p>
             <p><a href="https://unsplash.com/photos/4aJ9GCwB3Gw">Teapot</a>, <a href="https://unsplash.com/photos/4aJ9GCwB3Gw">Cactus</a>, and <a href="https://unsplash.com/photos/4aJ9GCwB3Gw">Flower</a> images sourced from Unsplash</p>
-            <h3>Step 2: Simplify Image in Photoshop</h3>
+            
+            <h2>Step 2: Simplify Image in Photoshop</h2>
             <p>Next, I used Photoshop to make the images black and white with simplified borders.</p>
             <p>
                 <img src="A1/cactusBW.png" height=200>
                 <img src="A1/daisyBW.png" height=200>
                 <img src="A1/teapotBW.png" height=200>
             </p>
-            <h3>Step 3: Create curves in Illustrator</h3>
+            
+            <h2>Step 3: Create curves in Illustrator</h2>
             <p>Next, I used Illustrator to trace and create curves for each image. I then exported each AI file into a DXF file format</p>
             
-            <h3>Step 4: Modelling in Rhino</h3>
+            <h2>Step 4: Modelling in Rhino</h2>
             <p>Next, I imported each DXF file into Rhino and used the curves to construct a cookie cutter model. I offsetted each curve to create a border, then extruded the two curves to create a wall. For each cutter, I also extruded a shorter based that you can use to press down on when you make cookies. For the teapot, I had to add a surface to connect the exterior wall with the interior of the teapot's handle so that the cookie cutter stayed in one piece. Finally I merged the curves with a Boolean Union to create one single shape.</p>
             <p>Check out my Rhino files here: <a href="A1/cactus.3dm">Cactus</a>, <a href="A1/daisy.3dm">Daisy</a>, <a href="A1/teapot.3dm">Teapot</a></p>
             
-            <h3>Step 5: Final Deliverable</h3>
+            <h2>Step 5: Final Deliverable</h2>
             <p>Once my models were finished, I exported the final result to an STL file for each cookie cutter.</p>
             <p>
                 <a href="A1/cactus.stl"><img src="A1/cactusFinal.png" height=200></a>

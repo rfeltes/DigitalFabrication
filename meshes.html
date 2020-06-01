@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
-
         <title>A4: Meshes</title>
-
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css"/>
     </head>
+    
     <body>
-           <div class="widebody">
-               <h1>Assignment 4</h1>
-               <h2>Part 1: Getting Meshy</h2>
-               <p>I found this alligator on Thingiverse and wanted to slice off the bottom part of the gator so when the top parts are printed it looks like the alligator is swimming partially underwater.</p>
-               <p><a href=" http://www.thingiverse.com/thing:260134 ">Alligator by Willie</a></p>
-               <p>I imported the alligator to Rhino and reduced the mesh since it was pretty big before. I then created a plane at the point where I wanted to trim the mesh, and used MeshTrim to slice the alligator. Then I turned on points and did some cleanup on the alligator's back.</p>
-               <p>
-                 <img src="A4/meshtrim.png" height=300>
-                 <img src="A4/cleanup.png" height=300>
-               </p>
-               
-               <p>Finally, I used fill mesh holes to fix the holes on the bottom of the alligator. After that, I was able to export it with no issues.</p>
-               
-               <p>
-                 <img src="A4/swimmingcrocrhino.png" height=300>
-                 <img src="A4/swimmingcroc.png" height=300>
-               </p>
-               
-               <p>Then, I wanted to continue using the alligator mesh but this time I decided to give it a party hat. So I created a STL for a party hat in rhino, and imported the alligator STL from thingiverse. After placing the hat on the alligator's head, I used MeshBooleanUnion to join the two separate meshes. Then I used Repair to correct the issues after the union. There was still naked edges in one of the alligator toes somehow, and I messed around a bit trying to fix it and eventually resolved it by deleting some offending points and edges and then filled the hole.</p>
-               
-               <p>
-                 <img src="A4/partyhatoncrocrhino.png" height=350>
-                 <img src="A4/partyhatoncroc.png" height=350>
-               </p>
-               
-                <p><a href="A4/croc.stl">Swimming alligator STL</a></p>
-                <p><a href="A4/partycroc.stl">Party alligator STL</a></p>
-               
-           <div>
-       </body>
+        
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-right">
+                    <a class="navbar-brand" href="index.html"><img src="logo.png" width="36"></a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container-fluid">
+            <h1>Assignment 4.1: Getting Meshy</h1>
+            <p>I found this alligator on Thingiverse and wanted to slice off the bottom part of the gator so when the top parts are printed it looks like the alligator is swimming partially underwater.</p>
+            <p><a href=" http://www.thingiverse.com/thing:260134 ">Alligator by Willie</a></p>
+            <p>I imported the alligator to Rhino and reduced the mesh since it was pretty big before. I then created a plane at the point where I wanted to trim the mesh, and used MeshTrim to slice the alligator. Then I turned on points and did some cleanup on the alligator's back.</p>
+            <p>
+            <img src="A4/meshtrim.png" height=300/>
+            <img src="A4/cleanup.png" height=300/>
+            </p>
+            
+            <p>Finally, I used fill mesh holes to fix the holes on the bottom of the alligator. After that, I was able to export it with no issues.</p>
+            
+            <p>
+            <img src="A4/swimmingcrocrhino.png" height=300/>
+            <img src="A4/swimmingcroc.png" height=300/>
+            </p>
+            
+            <p>Then, I wanted to continue using the alligator mesh but this time I decided to give it a party hat. So I created a STL for a party hat in rhino, and imported the alligator STL from thingiverse. After placing the hat on the alligator's head, I used MeshBooleanUnion to join the two separate meshes. Then I used Repair to correct the issues after the union. There was still naked edges in one of the alligator toes somehow, and I messed around a bit trying to fix it and eventually resolved it by deleting some offending points and edges and then filled the hole.</p>
+            
+            <p>
+            <img src="A4/partyhatoncrocrhino.png" height=350/>
+            <img src="A4/partyhatoncroc.png" height=350/>
+            </p>
+            
+            <p><a href="A4/croc.stl">Swimming alligator STL</a></p>
+            <p><a href="A4/partycroc.stl">Party alligator STL</a></p>
+            
+        </div>
+    </body>
 </html>

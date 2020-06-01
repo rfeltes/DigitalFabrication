@@ -1,95 +1,106 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
-
         <title>A5/6: Mold</title>
-
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css"/>
     </head>
+    
     <body>
-           <div class="widebody">
-               <h1>Assignment 5/6: Mold</h1>
-               <h2>Week One</h2>
-               
-               <p>I initially had a difficult time conceptualizing how to design a mold for a mold in CAD. I ended up creating my design in a very incremental fashion to help me understand each piecee. I think this approach will also help me if I need to make appropriate adjustments to the mold without completely starting over.</p>
-               <p>I began by designing a <a href="A5/house.stl">mini house</a> in Rhino that I want to be able to cast copies of.</p>
-               
-               <p>
-                 <img src="A5/house.png" height=350>
-                 <img src="A5/houseRhino.png" height=350>
-               </p>
-               
-               <p>Then, I thought about how the plaster will flow into the mold to help me understand which orientation to put the house in. I decided to put it upright because it has just 2 high points and fewer weird sideways extruding parts than if it was on its side. Since there are 2 high points, I decided I need to put 2 sprues.</p>
-               
-               <p><img src="A5/houseSprues.png" height=350> </p>
-               
-               <p>From there I thought about where to put the seam. I considered trying to get the seam to run along the corners of the house so you can't see it at all, but that confused my brain too much so I decided to just straight split the house. I put the seam on the sides of the house because I don't care how that looks as much as the front.</p>
-               <p>
-                 <img src="A5/seamSplit.png" height=350>
-                 <img src="A5/houseKeys.png" height=350>
-               </p>
-               
-               <p>I split my house model into two parts and added spherical keys.</p>
-               <p>
-                 <img src="A5/housePositive.png" height=350>
-                 <img src="A5/housePositive2.png" height=350>
-               </p>
-               
-                <p>Finally I added a box around my house to pour the silicone into.</p>
-                
-                <p><img src="A5/housePrint.jpeg" height=350> </p>
-                <p><a href="A5/housePositive.stl">This is the STL that I printed.</a></p>
-                
-                <p>Looking at the mold positive, I was a little concerned about the small diameter of the sprues that I made. I'm not sure how viscous the plaster is going to be since I don't have it yet, but it might be too small for the plaster to flow into the mold well. I decided I still want to try it to see if it works, and if it doesn't I can go back and modify the design.</p>
-                <p>
-                    <img src="A5/oomoo2.jpeg" height=350>
-                    <img src="A5/oomoo3.jpeg" height=350>
-                </p>
-                <p>I thoroughly mixed up equal parts of the Oomoo solutions and poured it into my mold. Then I left it to cure for 6 hours!</p>
-                <p><img src="A5/failMold.jpeg" height=350></p>
-                
-                <p>Things I learned from making my first mold:</p>
-                <l>
-                    <li>Sprues too small confirmed</li>
-                    <li>Keys also too small</li>
-                    <li>Sprue should be placed along seam line</li>
-                </l>
-                <p>Things I didn't learn from making my first mold:</p>
-                <l>
-                    <li>How to prevent air bubbles</li>
-                </l>
-                
-                <p>My game plan for the upcoming week is to make the necessary adjustments and reprint my mold mold, then remold my mold. I'm looking forward to show and tell in class tomorrow so I can steal useful techniques from my classmates.  After that I will make some plaster casts of my houses. Also while waiting for my new mold mold to print and plaster to arrive, I'm going to see if I can use my fail mold to make an ice house.</p>
-                
-                <p>*** update - the ice house turned out pretty well!</p>
-                <img src="A6/iceHouse.jpeg" height=350>
-                
-                <h2>Week Two</h2>
-                
-                <p>For this week, I made appropriate adjustments to my mold mold based on my trial mold. I moved the sprue to the bottom of the house with a bigger diameter, and I made the keys larger as well.  <a href="A7/houseFinal.stl">This</a> is the final STL that I printed.</p>
-                
-                <p>
-                  <img src="A6/finalMoldMold.png" height=350>
-                  <img src="A6/houseVid.mov" height=350>
-                </p>
-                
-                <p>After printing my new mold mold, I cast my mold using oomoo. I was able to prevent the air bubbles in the keys this time around be pouring silicon into the keys first. I had some extra oomoo, so I made another mold by sticking a little hand that I have into the leftover mixture.</p>
-                <p>
-                  <img src="A6/syringeMolding.jpeg" height=350>
-                  <img src="A6/house1.jpeg" height=350>
-                  <img src="A6/handMold.jpg" height=350>
-                </p>
-                
-                <p>My houses turned out really well! The only issue I had with them is that the front step would break off when I removed it from the mold. The fingers of my hand casts were very fragile so they kept breaking when I removed them from the mold—if I were intentionally designing a hand mold in the future I would probably make it a 2 part mold so that it would be easier to remove the casts.</p>
-                
-                <p>
-                  <img src="A6/fourHouses.jpeg" height=350>
-                  <img src="A6/hands.jpeg" height=350>
-                </p>
-                
-           <div>
-       </body>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-right">
+                    <a class="navbar-brand" href="index.html"><img src="logo.png" width="36"></a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container-fluid">
+            <h1>Assignment 5.2 & 6.1: Mold</h1>
+            <h2>Week One</h2>
+            
+            <p>I initially had a difficult time conceptualizing how to design a mold for a mold in CAD. I ended up creating my design in a very incremental fashion to help me understand each piecee. I think this approach will also help me if I need to make appropriate adjustments to the mold without completely starting over.</p>
+            <p>I began by designing a <a href="A5/house.stl">mini house</a> in Rhino that I want to be able to cast copies of.</p>
+            
+            <p>
+            <img src="A5/house.png" height=350/>
+            <img src="A5/houseRhino.png" height=350/>
+            </p>
+            
+            <p>Then, I thought about how the plaster will flow into the mold to help me understand which orientation to put the house in. I decided to put it upright because it has just 2 high points and fewer weird sideways extruding parts than if it was on its side. Since there are 2 high points, I decided I need to put 2 sprues.</p>
+            
+            <p><img src="A5/houseSprues.png" height=350/> </p>
+            
+            <p>From there I thought about where to put the seam. I considered trying to get the seam to run along the corners of the house so you can't see it at all, but that confused my brain too much so I decided to just straight split the house. I put the seam on the sides of the house because I don't care how that looks as much as the front.</p>
+            <p>
+            <img src="A5/seamSplit.png" height=350/>
+            <img src="A5/houseKeys.png" height=350/>
+            </p>
+            
+            <p>I split my house model into two parts and added spherical keys.</p>
+            <p>
+            <img src="A5/housePositive.png" height=350/>
+            <img src="A5/housePositive2.png" height=350/>
+            </p>
+            
+            <p>Finally I added a box around my house to pour the silicone into.</p>
+            
+            <p><img src="A5/housePrint.jpeg" height=350/> </p>
+            <p><a href="A5/housePositive.stl">This is the STL that I printed.</a></p>
+            
+            <p>Looking at the mold positive, I was a little concerned about the small diameter of the sprues that I made. I'm not sure how viscous the plaster is going to be since I don't have it yet, but it might be too small for the plaster to flow into the mold well. I decided I still want to try it to see if it works, and if it doesn't I can go back and modify the design.</p>
+            <p>
+            <img src="A5/oomoo2.jpeg" height=350/>
+            <img src="A5/oomoo3.jpeg" height=350/>
+            </p>
+            <p>I thoroughly mixed up equal parts of the Oomoo solutions and poured it into my mold. Then I left it to cure for 6 hours!</p>
+            <p><img src="A5/failMold.jpeg" height=350/></p>
+            
+            <p>Things I learned from making my first mold:</p>
+            <l>
+                <li>Sprues too small confirmed</li>
+                <li>Keys also too small</li>
+                <li>Sprue should be placed along seam line</li>
+            </l>
+            <p>Things I didn't learn from making my first mold:</p>
+            <l>
+                <li>How to prevent air bubbles</li>
+            </l>
+            
+            <p>My game plan for the upcoming week is to make the necessary adjustments and reprint my mold mold, then remold my mold. I'm looking forward to show and tell in class tomorrow so I can steal useful techniques from my classmates.  After that I will make some plaster casts of my houses. Also while waiting for my new mold mold to print and plaster to arrive, I'm going to see if I can use my fail mold to make an ice house.</p>
+            
+            <p>*** update - the ice house turned out pretty well!</p>
+            <img src="A6/iceHouse.jpeg" height=350/>
+        </div>
+        <div class="container-fluid">
+            <h2>Week Two</h2>
+            
+            <p>For this week, I made appropriate adjustments to my mold mold based on my trial mold. I moved the sprue to the bottom of the house with a bigger diameter, and I made the keys larger as well.  <a href="A7/houseFinal.stl">This</a> is the final STL that I printed.</p>
+            
+            <p>
+            <img src="A6/finalMoldMold.png" height=350/>
+            <img src="A6/houseVid.mov" height=350/>
+            </p>
+            
+            <p>After printing my new mold mold, I cast my mold using oomoo. I was able to prevent the air bubbles in the keys this time around be pouring silicon into the keys first. I had some extra oomoo, so I made another mold by sticking a little hand that I have into the leftover mixture.</p>
+            <p>
+            <img src="A6/syringeMolding.jpeg" height=350/>
+            <img src="A6/house1.jpeg" height=350/>
+            <img src="A6/handMold.jpg" height=350/>
+            </p>
+            
+            <p>My houses turned out really well! The only issue I had with them is that the front step would break off when I removed it from the mold. The fingers of my hand casts were very fragile so they kept breaking when I removed them from the mold—if I were intentionally designing a hand mold in the future I would probably make it a 2 part mold so that it would be easier to remove the casts.</p>
+            
+            <p>
+            <img src="A6/fourHouses.jpeg" height=350/>
+            <img src="A6/hands.jpeg" height=350/>
+            </p>
+            
+        </div>
+    </body>
 </html>
