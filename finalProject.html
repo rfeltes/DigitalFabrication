@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+            
+            <title>A8: Booknook</title>
+            
+            <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+            
+            </head>
+    <body>
+        <div class="widebody">
+            <h1>Assignment 8: Final Project</h1>
+            
+            <p>For my final project I designed, 3D-printed, and constructed a "booknook"—a bookend shelf insert with a miniature city alleyway built inside.</p>
+            <p><img src="A8/booknook.mov" height=500/></p>
+            
+            <h2>Inspiration & Brainstorming</h2>
+            
+            <p>My inspiration for this project comes from the subreddit <a href="https://www.reddit.com/r/booknooks/">r/booknooks</a> and looking up pictures of alleyways on <a href="https://unsplash.com/s/photos/alleyway">Unsplash</a>. I also created <a href="https://www.pinterest.com/rachelfeltes/3d-ideas/booknook/">this moodboard</a> on Pinterest with pictures of booknooks and alleyways with the vibe I was interested in producing for my own booknook</p>
+            
+            <p><img src="A8/sketch.png" height=500/></p>
+            <p>To kick off the project, I started by sketching a layout with a few ideas for interior elements out exterior design.</p>
+            
+            <h2>Prototyping</h2>
+            <p>Since the prints required for my design were fairly detailed and thus would be painful to reprint should things go awry, I started by prototyping and testing smaller elements of the design. I was able to test out some ideas and make decisions before starting the process of printing pieces.</p>
+            
+            <h3>Structure</h3>
+            <p>
+            <img src="A8/cardboardPrototype1.jpeg" height=350/>
+            <img src="A8/cardboardPrototype2.jpeg" height=350/>
+            </p>
+            <p>I put together this cardboard version of my booknook so I could prototype the dimensions and structure I wanted to use.</p>
+            
+            <h3>Sliding Track</h3>
+            <p>
+            <img src="A8/trackIdea.png" height=350/>
+            <img src="A8/track.png" height=350/>
+            </p>
+            <p>I wanted to have a removable exterior cover for the booknook that would hide interior wiring and could be reversed to enclose the booknook for transportation. I designed a <a href="A8/Track3.stl">sliding track</a> that slid smoothly as a prototype.</p>
+            <p>This is a situation where I should have done more testing of the prototype before printing the large pieces. I realized after I painted the main pieces that the extra bulk and texture of the paint made the tracks not work smoothly anymore. I should have either not painted the track parts of my print or I should have designed with more wiggle room for the paint.</p>
+            
+            <h3>Windows</h3>
+            <p>
+            <img src="A8/windowPrototype.jpeg" height=300/>
+            <img src="A8/windows.png" height=300/>
+            </p>
+            <p>I also prototyped some <a href="A8/Windows.stl">windows</a> so I could figure out the scale I wanted to use and determine what material to use for windowpanes. I tested parchment paper, dried glue, plastic wrap, and clear tape. I shone light through each of my test windows to test how well they diffuse light. I liked parchment paper best for the frosted glass vibe and clear tape best to emulate regular glass.</p>
+            
+            <h3>Brick</h3>
+            <p><img src="A8/brickTest.jpeg" height=350/></p>
+            <p>I also printed out a couple kind of brick patterns to test what I would use on the walls. I tried this <a href="https://www.thingiverse.com/thing:2742421">brick pattern by Degus71 on Thingiverse</a> and constructed my own <a href="A8/goodBrick.stl">brick pattern</a> which I liked better.</p>
+            <p><img src="A8/brickPrintIssue.jpeg" height=350/></p>
+            <p>I took a really bad photo to illustrate this, but I also learned that I should not print with the brick part facing down, since it caused adhesion problems with all the tiny brick detail.</p>
+            
+            <h3>Signage</h3>
+            <p>
+            <img src="A8/signs.png" height=350/>
+            <img src="A8/signTest1.jpeg" height=350/>
+            <img src="A8/signTest2.jpeg" height=350/>
+            </p>
+            <p>I also printed a test version of the <a href="A8/signs.stl">signs</a> so I could test how lights shine through colored paper. I tried a couple different weights of paper and installed the lights in my cardboard prototype. I liked how the light shines through the paper but decided to print my actual signs a little smaller than the test ones since the test ones were pretty bulky.</p>
+            
+            <h2>Modelling</h2>
+            <p>My approach for designing the booknook was to design all of the pieces together in one Rhino file so I could correctly visualize what I was doing, then export each piece as a separate STL for printing.</p>
+            <p>
+            <img src="A8/walls.png" height=350/>
+            <img src="A8/walls2.png" height=350/>
+            </p>
+            <p>I began by modelling the walls of my booknook, using the cardboard prototype as a guide.</p>
+            
+            <p>
+            <img src="A8/interior1.png" height=300/>
+            <img src="A8/interior2.png" height=300/>
+            <img src="A8/interior3.png" height=300/>
+            </p>
+            <p>Then, using my sketch as a reference I designed the interior of the booknook.</p>
+            
+            <p><a href="A8/Interior.stl">Interior STL</a></p>
+            <p><a href="A8/Interior.3dm">Interior 3DM</a></p>
+            <p>
+            <img src="A8/leftInterior.png" height=350/>
+            <img src="A8/rightInterior.png" height=350/>
+            </p>
+            
+            
+            <p>I made a few changes from the original sketch.</p>
+            <ol>
+                <li>I had to leave some empty space on the left wall, since I was going to put a tilted mirror in the back to create the illusion of the alleyway continuing in the background. I didn't have room to put the full 2 story balconies with door and window that I was intending, so I replaced it with windows with mini balconies.</li>
+                <li>I originally had a little shuttered street café on the right wall based on <a href="https://alleysofseattle.files.wordpress.com/2010/12/20101118_japan_2010_0442.jpg?w=682&h=1024">this inspiration photo</a> of a tokyo cafe, It was originally shuttered because I was too lazy to design an interior for the café, but my sisters convinced me to unshutter it with the idea of printing out a 2 dimensional image for the interior. </li>
+            </ol>
+            
+            <p>Each part of the interior was designed by me with the exception of the fire escape, which was designed by Robin Berndt and is <a href="https://www.thingiverse.com/thing:3808938">available on Thingiverse</a></p>
+            
+            <h2>Printing</h2>
+            <p>Now for printing! I'm glad I ironed out major wrinkles during the prototyping phase, because the printing part went pretty smoothly.</p>
+            <p><img src="A8/printing1.jpeg" height=350/></p>
+            
+            <p>I separately printed interior pieces like signs, stools, fans, awning, and fire escape. For the interior walls and exterior cover I split them in half horizontally to mitigate the risk and time wasted if the print failed. In retrospect, I wish I had printed the exterior cover in one piece because I was not able to completely hide the seam line after joining the pieces. The interior walls glued together much more nicely since the brick walls hid the seam lines pretty well.</p>
+            <p>
+            <img src="A8/fireEscapePrint.jpeg" height=350/>
+            <img src="A8/printing2.jpeg" height=350/>
+            </p>
+            
+            <p>I was able to print most of the smaller interior pieces in the space of a day. The larger wall and exterior pieces took about one day each, with prints running from 7 to 14 hours each.</p>
+            
+            <h2>Painting</h2>
+            <p>I sanded and primed pieces as they finished painting, and I started painting some of the smaller pieces as I was waiting for the big prints to finish.</p>
+            <p>
+            <img src="A8/priming.jpeg" height=350/>
+            <img src="A8/priming2.jpeg" height=350/>
+            </p>
+            
+            <p>Painting was probably the biggest difficulty during the process due to a number of factors including: </p>
+            <ol>
+                <li>Shaky hands — bad for small detail work</li>
+                <li>I'm impatient – also bad for small detail work</li>
+                <li>Paint accessibility — turns out other people want to paint stuff during quarantine too. Local stores were completely out of stock and paints online were on back order or marked up over 500%. I ended up doing some creative color mixing with paint I have leftover from previous projects and biting the bullet to order gold & silver metallic paint.</li>
+            </ol>
+            
+            <p>
+            <img src="A8/bookCoverDesign.png" height=350/>
+            <img src="A8/exteriorCover.jpeg" height=350/>
+            </p>
+            <p>The exterior cover finished printing first so I painted it first. I designed it to look like a gold embossed book cover using blue and metallic paint.</p>
+            
+            <p>
+            <img src="A8/painting1.jpeg" height=350/>
+            <img src="A8/paintedBrick.jpeg" height=350/>
+            <img src="A8/graffiti.jpeg" height=350/>
+            </p>
+            <p>I'm the most proud of how the brick turned out, I think it looks the most realistic out of everything I painted. I even tried to add some HCDE-themed graffiti to moderate success.</p>
+            
+            <h2>Construction</h2>
+            <p><img src="A8/finishedWalls.jpeg" height=350/></p>
+            <p>From here, I started putting together pieces and adding finishing touches.</p>
+
+            <ul>
+                <li>Colored and glued on the paper for the signs</li>
+                <li>Added fabric to the awning</li>
+                <li>Pasted and ripped off some paper on one of the doors to look like ripped off flyers</li>
+                <li>Added tape and parchment papers to the windows for glass</li>
+                <li>Glued all the loose pieces to the walls</li>
+                <li>Painted clear nail polish in patches over the model so it looks like it recently rained and there are puddles when the light reflects off it</li>
+            </ul>
+            
+            <p><img src="A8/openSign.jpeg" height=350/></p>
+            <p>To construct the signs I made a design in Illustrator, taped a piece of paper to my computer screen, and traced on the sign. Ideally I would have printed out the signs rather than hand drawing them, but at the time I don't have access to a 2D printer.</p>
+            
+            <p>
+            <img src="A8/finishedLeftWall.jpeg" height=350/>
+            <img src="A8/finishedRightWall.jpeg" height=350/>
+            </p>
+            <p>Now the scariest part… gluing the walls down. This part was scary for me since it meant all of the interior pieces would be harder to access if I wanted to make small adjustments. But at this point I was pretty happy with my paint job so I went for it.</p>
+            
+            <p><img src="A8/model1.jpeg" height=350/></p>
+            <p>I also drew lines along the front-facing support walls to make it look like book pages.</p>
+
+            <p>
+            <img src="A8/lightInstallation2.jpeg" height=350/>
+            <img src="A8/lightInstallation3.jpeg" height=350/>
+            </p>
+            <p>Next I installed the lights! I repurposed a small, battery-operated strand of fairy lights that I already owned. I fed the LEDs through holes in the interior walls so they sat inside of each of the signs.  Before I got the lights installed I was kind of worried about the model because I couldn't get the level of detail up to the standard I wanted and I wasn't sure if it would turn out as good as I wanted, but when the lights went on it finally felt like my vision was coming true!</p>
+
+            <p><img src="A8/lightCrack.jpeg" height=350/></p>
+            <p>I did have an issue with fitting the exterior cover over the interior with the lights installed. When I measured the battery pack I forgot to include the dimension of the on/off switch, so to make room for the switch the two pieces don't fit together tightly and some light escapes through the cracks.</p>
+            
+            <p><img src="A8/mirror.mov" height=350/></p>
+            <p>I also finally got the flexible mirror delivered, so I cut a piece to size and installed it. It looks really cool! The tilted mirror was an idea I saw on <a href="https://www.reddit.com/r/booknooks/">r/booknooks</a> where it makes it look like the alleyway goes off into the distance at an angle.</p>
+            
+            
+            <h2>Final Product</h2>
+            <p><img src="A8/booknook.mov" height=350/></p>
+            <p>It's done! Well, mostly. I still need to print out my flat image for the interior of the street café, but I don't own a 2D printer so I will have to wait until Stay at Home restrictions are lifted enough that I can go to the library and print. I think it's a little funny that I own a 3D printer but not a 2D one…</p>
+            <p>
+            <img src="A8/booknook1.jpeg" height=350/>
+            <img src="A8/booknook2.jpeg" height=350/>
+            <img src="A8/booknook3.jpeg" height=350/>
+            </p>
+            
+            <p>Here's the final product! It's a little hard to get pics of the interior since my phone camera doesn't fit in the space, but I did my best :) Enjoy!</p>
+            <p>
+            <img src="A8/booknook4.jpeg" height=350/>
+            <img src="A8/booknook2.mov" height=350/>
+            </p>
+            
+            <p><a href="A8/STLs/">Here are the 21 separate STL files that I printed and used for my Booknook</a></p>
+
+            
+            <h2>Reflection</h2>
+            
+            <h3>Possible Improvements</h3>
+            <p>While I am definitely psyched with my final product, there are a few improvements, fixes, and things I'd like to try with my next booknook.</p>
+            <ol>
+                <li><b>Fix sliding track</b>: I mentioned that the sliding track I made for the exterior cover stopped working with the extra the bulk and texture added from painting the pieces. I'd like to continue working to get this piece right, since it would make the final build seem really slick and professional if it actually worked.</li>
+                <li><b>Print exterior piece whole</b>: For the sake of speed I split the larger prints horizontally into two pieces. This wasn't an issue for the interior walls since the brick pattern concealed the seam line, but I am not happy with the look of the seam on the exterior piece. In the future I would like to try printing the exterior piece in one go.</li>
+                <li><b>Better finishing</b>: Pretty much all of my pieces are finished with acrylic paint, which is hard to make look realistic in some cases. Using metallic paint for the metal pieces was really helpful, but I think it would be cool to continue playing with other types of finishes and materials. For example, it would be cool to actually bind the exterior cover with fake leather so it looks more like a book. I could cover the seats of the stools with vinyl or something more realistic. It would be also neat to add some natural looking elements like fake moss or something. I didn't try out these ideas for this project due to budget, time, and item accessibility limitations but it's something I can consider for the future.</li>
+                <li><b>Better fitting pieces</b>: Another issue I had was with fitting pieces together. You can see in the images that there is a gap between the exterior cover and interior that let’s some of the light through from the wiring. If I could fix the gap so the pieces fit more tightly, the final product would look a lot more slick.</li>
+                <li><b>Cleaner signage</b>: I like the look of the signs I made from the materials I had available, but I think they would look better if I designed them in Illustrator and printed in color ink on paper rather than hand drawing designs. It would look a lot cleaner, and I could print out the cutting lines true to the sign dimensions rather than the method I used which was holding the paper up to the sign frame and tracing where to cut. I also made the signs pretty wide (especially the street café) in order to fit the size lightbulbs that I had on hand, so if I obtained smaller LED light string I could make the signs slimmer as well.</li>
+                <li><b>Better lighting</b>: I wish I had done more prototyping of the lighting system and installed a full version of my planned lighting system in my cardboard prototype before printing. As it turned out, the lights ended up having some issues and some cool but unintentional aspects. I realized after installing lighting that a lot of my lights were weighted to the front of the booknook, so the back is kind of dark when the lights are on. I'd like to even out the signage in the future so the entire space is evenly lit. One cool thing that happened without my intention is that I painted the inside of the exterior cover blue to match the outside. When the cover is on and the lights are on, the blue walls reflect the lights and it looks like all of the windows emanate a soft blue light which looks really cool.</li>
+                <li><b>Play with scale and perspective lines more</b>: I did some playing around with scale/perspective in my design, for example as elements get closer to the back of the alleyway they are actually narrower. I think I would like to continue working on this idea with a lot more intention, since in the current booknook it is hard to see some of the back elements and some of the front elements ended up a bit too large. One idea I have is to angle the interior walls inward as they go back to give a forced perspective and make it easier to see the back elements.</li>
+            </ol>
+            
+            <h3>Lessons Learned</h3>
+            <p>This process was a great learning process for me and I have some solid takeaways that I can bring along to future projects, both in Digital Fabrication and beyond.</p>
+            
+            <h4>Start small & build up</h4>
+            <p>My process of prototyping and iterating on small design elements helped me quickly discover and resolve issues that would have greatly delayed me if I had discovered them later in the process. By building a cardboard prototype I was able to comprehend the correct dimension when designing in CAD and did not have to print multiple versions of the larger pieces to fix dimensions. </p>
+            
+            <h4>Keep the big picture in mind for the entire process</h4>
+            <p>By making sure to consider the end vision through the design process, I could anticipate future issues and design ideas that wouldn't come to fruition in later stages. I both did this well and could have done it better. By modelling my booknook in one piece I was able to make sure that the scale and overall aesthetic of my model fulfilled my vision, for example  I designed a slot to fit my tilted mirror which made it really easy to achieve the effect I wanted. However, I failed to think about things like paint buildup and overall light distribution which needed to be addressed in the CAD stages but I did not realize until I was painting and installing lights.</p>
+            
+            <h4>Don't judge the final product until it's a final product</h4>
+            <p>OK this one should be taken with a grain of salt since you should definitely be critiquing and improving your design as you go, which is something I did during this process. But what I am talking about with this insight is that I had a huge moment of doubt with my booknook before I installed the mirror and lights because I thought it looked really stupid and I was going to be embarrassed to present it to the class. I was unhappy with my painting skills and hand-drawn signs. But then I installed the mirror and lights which added this extra layer of realism and magic. It didn't look exactly like I wanted (see the Possible Improvements section) but it still looks really cool and I'm happy with what I made given the circumstances. So, perhaps a better way to phrase this insight is "Don't judge it AS a final product until it IS a final product".</p>
+            
+        </div>
+    </body>
+</html>
